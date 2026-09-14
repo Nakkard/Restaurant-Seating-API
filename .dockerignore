@@ -1,0 +1,9 @@
+**/bin
+**/obj
+.git
+.idea
+.DS_Store
+.env*
+TestResults
+**/TestResults
+docs

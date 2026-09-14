@@ -1,0 +1,23 @@
+@host = http://localhost:5080
+@groupId = REPLACE_WITH_RESPONSE_ID
+
+### Register a group
+POST {{host}}/api/groups
+Content-Type: application/json
+
+{"size": 6}
+
+### Read the group
+GET {{host}}/api/groups/{{groupId}}
+
+### Waiting queue
+GET {{host}}/api/groups?status=Waiting&offset=0&limit=50
+
+### Current tables
+GET {{host}}/api/tables
+
+### Leave (safe to repeat)
+POST {{host}}/api/groups/{{groupId}}/leave
+
+### Readiness
+GET {{host}}/health

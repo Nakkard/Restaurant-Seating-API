@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+.idea/
+.vs/
+.DS_Store
+.env
+.env.*
+!.env.example
+TestResults/
+**/TestResults/
+*.user
+*.suo
+src/Api/appsettings.Local.json
